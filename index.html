@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Medley Kitchens — Crafted Interiors</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <h1>Medley</h1>
+  <nav>
+    <a href="#kitchens">Kitchens</a>
+    <a href="#bathrooms">Bathrooms</a>
+    <a href="#custom">Custom</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-content">
+    <p style="letter-spacing:0.3rem; text-transform:uppercase; font-size:0.85rem; opacity:0.7;">Brantford, Ontario — Since 1988</p>
+    <h2>Thick oak, seamless installs, and signature hospitality.</h2>
+    <p>We design, craft, and install luxury kitchens, bathrooms, and custom millwork with the warmth of your family at the center.</p>
+    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a free call</button>
+  </div>
+</section>
+<section id="kitchens">
+  <div class="section-title">
+    <h3>Kitchen Storyrooms</h3>
+    <p style="opacity:0.7;">Scroll to explore</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <img src="uploads/3/4/7/6/34763239/20220531-131858-2022-09-28t15-43-19-311_orig.jpg" alt="Designer kitchen" />
+      <div class="card-body">
+        <h4>Modern with warmth</h4>
+        <p>Panelled islands, honed quartz, and hidden storage for effortless entertaining.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="uploads/3/4/7/6/34763239/20210825-214541-2_orig.jpg" alt="Timeless cabinetry" />
+      <div class="card-body">
+        <h4>Heritage details</h4>
+        <p>Crafted cornices and statement lighting complement traditional homes.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="uploads/3/4/7/6/34763239/20220531-131139_orig.jpg" alt="Island seating" />
+      <div class="card-body">
+        <h4>Family ready</h4>
+        <p>Large islands, seating, and butcher blocks made for homework and toast.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="bathrooms">
+  <div class="section-title">
+    <h3>Bathrooms & Spa Suites</h3>
+    <p style="opacity:0.7;">Soothing materials, clean silhouettes</p>
+  </div>
+  <div class="grid-two">
+    <div class="card">
+      <img src="uploads/3/4/7/6/34763239/20191207-173257_orig.jpg" alt="Bathroom design" />
+      <div class="card-body">
+        <h4>Heated retreats</h4>
+        <p>Stone, steam, storage, and radiant floors tuned to your rhythm.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="uploads/3/4/7/6/34763239/20201204-115111_orig.jpg" alt="Spa bath" />
+      <div class="card-body">
+        <h4>Curated moments</h4>
+        <p>Floating vanities and matte black fixtures keep the palette calm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="custom">
+  <div class="section-title">
+    <h3>Custom Projects</h3>
+    <p style="opacity:0.7;">Bathrooms, bars, whole homes</p>
+  </div>
+  <div class="grid-two">
+    <div class="card">
+      <img src="uploads/3/4/7/6/34763239/20201204-160113_orig.jpg" alt="Custom cabinetry" />
+      <div class="card-body">
+        <h4>Millwork & joinery</h4>
+        <p>Walk-in pantries, floating shelves, integrated appliances, and bespoke bars.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="uploads/3/4/7/6/34763239/img-20190623-095544_orig.jpg" alt="Custom carpentry" />
+      <div class="card-body">
+        <h4>Built for life</h4>
+        <p>Durable surfaces, reheated fireside mantles, and craftsmanship you feel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="section-title">
+    <h3>Let’s connect</h3>
+    <p style="opacity:0.6;">Estimates in 48h</p>
+  </div>
+  <div class="grid-two">
+    <div class="contact-panel">
+      <h4>Studio</h4>
+      <p>Mount Pleasant, Ontario</p>
+      <p>226-388-4160</p>
+      <p>hello@medleykitchens.ca</p>
+      <p style="margin-top:1rem;">Call us to see samples, schedule a home visit, or tour our workshop.</p>
+    </div>
+    <div class="contact-panel">
+      <h4>Request a call</h4>
+      <form action="mailto:hello@medleykitchens.ca" method="post" enctype="text/plain">
+        <label style="display:block;margin-bottom:0.5rem;font-weight:600;">Name</label>
+        <input type="text" name="Name" style="width:100%;padding:0.6rem;border-radius:0.5rem;border:none;margin-bottom:0.75rem;font-size:1rem;" />
+        <label style="display:block;margin-bottom:0.5rem;font-weight:600;">Project type</label>
+        <input type="text" name="Project" style="width:100%;padding:0.6rem;border-radius:0.5rem;border:none;margin-bottom:0.75rem;font-size:1rem;" />
+        <label style="display:block;margin-bottom:0.5rem;font-weight:600;">Preferred dates</label>
+        <input type="text" name="Date" style="width:100%;padding:0.6rem;border-radius:0.5rem;border:none;margin-bottom:1rem;font-size:1rem;" />
+        <button class="cta" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  © 2026 Medley Kitchens. Built with care from Brantford to the 905.
+</footer>
+</body>
+</html>
