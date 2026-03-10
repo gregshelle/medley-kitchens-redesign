@@ -3,199 +3,280 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Medley Kitchens — Custom Carpentry | Brantford</title>
+<title>Medley Kitchens — Custom Carpentry &amp; Renovations | Brantford</title>
+<meta name="description" content="Custom kitchens, bathrooms, and whole-home renovations by Medley Kitchens. Over 30 years of traditional carpentry in Brantford and the surrounding area." />
 <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+<!-- ===== Header ===== -->
 <header>
   <a class="logo" href="/">
     <img src="uploads/3/4/7/6/34763239/header_images/1398175770.jpg" alt="Medley Kitchens logo" />
   </a>
+  <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
   <nav>
-    <a href="#kitchens">Kitchens</a>
-    <a href="#bathrooms">Bathrooms</a>
-    <a href="#custom">Custom</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="#kitchens" onclick="document.querySelector('nav').classList.remove('open')">Kitchens</a>
+    <a href="#bathrooms" onclick="document.querySelector('nav').classList.remove('open')">Bathrooms</a>
+    <a href="#carpentry" onclick="document.querySelector('nav').classList.remove('open')">Carpentry</a>
+    <a href="#about" onclick="document.querySelector('nav').classList.remove('open')">About</a>
+    <a href="#contact" onclick="document.querySelector('nav').classList.remove('open')">Contact</a>
   </nav>
 </header>
+
+<!-- ===== Hero ===== -->
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p style="letter-spacing:0.3rem;text-transform:uppercase;font-size:0.8rem;opacity:0.7;">Mount Pleasant, Ontario · 226‑388‑4160</p>
-    <h2>Improving homes for over 30 years.</h2>
-    <p>Custom kitchens, bathrooms, and whole-home renovations built with traditional carpentry, local knowledge, and hospitality that feels born-and-raised in Brantford.</p>
-    <p><strong>A complete and pleasant renovation experience.</strong> Every picture on this site is our own work, every client receives a quality assured, full valued service.</p>
-    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a renovation call</button>
+    <span class="hero-badge">Mount Pleasant, Ontario</span>
+    <h1>Craftsmanship that<br /><span>transforms homes</span></h1>
+    <p class="hero-desc">Custom kitchens, bathrooms, and whole-home renovations built with traditional carpentry, local knowledge, and hospitality that feels born-and-raised in Brantford.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a consultation</button>
+      <a class="btn-secondary" href="#kitchens">View our work</a>
+    </div>
   </div>
   <div class="hero-stats">
-    <div>
-      <p class="stat-number">1988</p>
-      <p class="stat-label">Year Medley Kitchens opened</p>
+    <div class="hero-stat">
+      <span class="number">1988</span>
+      <span class="label">Established</span>
     </div>
-    <div>
-      <p class="stat-number">+30</p>
-      <p class="stat-label">Years of experience</p>
+    <div class="hero-stat">
+      <span class="number">30+</span>
+      <span class="label">Years experience</span>
     </div>
-    <div>
-      <p class="stat-number">100%</p>
-      <p class="stat-label">Work we photograph ourselves</p>
+    <div class="hero-stat">
+      <span class="number">100%</span>
+      <span class="label">Our own photography</span>
     </div>
   </div>
 </section>
+
+<!-- ===== Kitchens ===== -->
 <section id="kitchens">
-  <div class="section-title">
-    <h3>Custom Kitchens</h3>
-    <p>Transforming 88 kitchens a year with craftsmanship and care.</p>
+  <div class="section-header">
+    <p class="section-label">Our Specialty</p>
+    <h2>Custom Kitchens</h2>
+    <p>From layout planning to appliance integration, every cabinet, island, and finish is built in our Brantford workshop.</p>
   </div>
-  <div class="cards">
-    <article class="card">
-      <img src="uploads/3/4/7/6/34763239/20220531-132827_orig.jpg" alt="Kitchens" />
-      <div class="card-body">
+  <div class="portfolio-grid">
+    <div class="portfolio-item featured">
+      <img src="uploads/3/4/7/6/34763239/20220531-131858-2022-09-28t15-43-19-311_orig.jpg" alt="Custom kitchen with island" />
+      <div class="portfolio-caption">
         <h4>Custom cabinetry</h4>
-        <p>We design complete kitchen renovations—from layout planning to appliance integration, every cabinet, island, and finish is built in our Brantford workshop.</p>
-      </div>
-    </article>
-    <article class="card">
-      <img src="uploads/3/4/7/6/34763239/20210825-214541-2_orig.jpg" alt="Traditional carpentry" />
-      <div class="card-body">
-        <h4>Traditional details</h4>
-        <p>Historic homes receive panelled islands, crown moldings, and mantles that honour the original architecture while adding modern function.</p>
-      </div>
-    </article>
-    <article class="card">
-      <img src="uploads/3/4/7/6/34763239/20220531-131139_orig.jpg" alt="Island" />
-      <div class="card-body">
-        <h4>Family first</h4>
-        <p>Large islands, natural materials, and hidden storage keep your crew organized from homework to dinner.</p>
-      </div>
-    </article>
-  </div>
-</section>
-<section id="bathrooms">
-  <div class="section-title">
-    <h3>Bathrooms & Spa Suites</h3>
-    <p>Comfort and detail for every fixture.</p>
-  </div>
-  <div class="grid-two">
-    <div class="card">
-      <img src="uploads/3/4/7/6/34763239/20191207-173257_orig.jpg" alt="Bathroom" />
-      <div class="card-body">
-        <h4>Heated retreats</h4>
-        <p>Natural stone, ceramic tile, and radiant floors tuned to how you live.</p>
+        <p>Complete kitchen renovation with custom island</p>
       </div>
     </div>
-    <div class="card">
-      <img src="uploads/3/4/7/6/34763239/20201204-115111_orig.jpg" alt="Spa" />
-      <div class="card-body">
+    <div class="portfolio-item">
+      <img src="uploads/3/4/7/6/34763239/20220531-132827_orig.jpg" alt="Modern kitchen design" />
+      <div class="portfolio-caption">
+        <h4>Modern finishes</h4>
+        <p>Clean lines with traditional craft</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="uploads/3/4/7/6/34763239/20210825-214541-2_orig.jpg" alt="Traditional kitchen details" />
+      <div class="portfolio-caption">
+        <h4>Traditional details</h4>
+        <p>Crown moldings and panelled islands</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="uploads/3/4/7/6/34763239/20220531-131139_orig.jpg" alt="Family kitchen" />
+      <div class="portfolio-caption">
+        <h4>Family-first design</h4>
+        <p>Large islands and hidden storage</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="uploads/3/4/7/6/34763239/20220531-131608-2022-09-28t15-45-52-507_orig.jpg" alt="Kitchen renovation" />
+      <div class="portfolio-caption">
+        <h4>Full renovations</h4>
+        <p>From concept to completion</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bathrooms ===== -->
+<section id="bathrooms">
+  <div class="section-header">
+    <p class="section-label">Relaxation &amp; Function</p>
+    <h2>Bathrooms &amp; Spa Suites</h2>
+    <p>Natural stone, ceramic tile, and radiant floors tuned to how you live.</p>
+  </div>
+  <div class="feature-cards">
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/20191207-173257_orig.jpg" alt="Heated bathroom retreat" />
+      <div class="feature-card-body">
+        <h4>Heated retreats</h4>
+        <p>Natural stone, ceramic tile, and radiant floors create a sanctuary tuned to how you live.</p>
+      </div>
+    </article>
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/20201204-115111_orig.jpg" alt="Spa bathroom" />
+      <div class="feature-card-body">
         <h4>Functional luxury</h4>
         <p>Floating vanities, matte fixtures, and storage that keeps daily routines effortless.</p>
       </div>
-    </div>
+    </article>
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/20200121-123215_orig.jpg" alt="Bathroom renovation" />
+      <div class="feature-card-body">
+        <h4>Complete transformations</h4>
+        <p>Full bathroom renovations from plumbing rough-in to final fixtures and finishing touches.</p>
+      </div>
+    </article>
   </div>
 </section>
-<section id="custom">
-  <div class="section-title">
-    <h3>Custom Carpentry</h3>
-    <p>Design, build, restore.</p>
+
+<!-- ===== Custom Carpentry ===== -->
+<section id="carpentry">
+  <div class="section-header">
+    <p class="section-label">Design &middot; Build &middot; Restore</p>
+    <h2>Custom Carpentry</h2>
+    <p>Millwork, joinery, and full renovations delivered by a licensed general carpenter.</p>
   </div>
-  <div class="grid-two">
-    <div class="card">
-      <img src="uploads/3/4/7/6/34763239/20201204-160113_orig.jpg" alt="Custom" />
-      <div class="card-body">
-        <h4>Millwork + joinery</h4>
+  <div class="feature-cards">
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/20201204-160113_orig.jpg" alt="Custom millwork" />
+      <div class="feature-card-body">
+        <h4>Millwork &amp; joinery</h4>
         <p>Custom furniture, wall units, mantles, and door/trim packages executed with precision.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="uploads/3/4/7/6/34763239/img-20190623-095544_orig.jpg" alt="Craftsmanship" />
-      <div class="card-body">
-        <h4>Renovations</h4>
-        <p>Portico builds, drywall, painting, tile work, and entire home updates delivered by a licensed general carpenter.</p>
+    </article>
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/fireplace_orig.jpg" alt="Fireplace mantle" />
+      <div class="feature-card-body">
+        <h4>Mantles &amp; built-ins</h4>
+        <p>Fireplace surrounds, bookcases, and built-in cabinetry that become the heart of a room.</p>
       </div>
-    </div>
+    </article>
+    <article class="feature-card">
+      <img src="uploads/3/4/7/6/34763239/img-20190623-095544_orig.jpg" alt="Home renovation" />
+      <div class="feature-card-body">
+        <h4>Whole-home renovations</h4>
+        <p>Portico builds, drywall, painting, tile work, and entire home updates under one roof.</p>
+      </div>
+    </article>
   </div>
 </section>
+
+<!-- ===== About ===== -->
 <section id="about">
-  <div class="section-title">
-    <h3>About Medley</h3>
-  </div>
-  <div class="grid-two">
-    <div class="contact-panel">
-      <p>Hi! I'm Dave—owner, carpenter, cabinetmaker, and labourer for Medley Kitchens. Along with Merna and Darren we provide a wide array of home improvement services, specializing in complete kitchen renovations and traditional cabinetry.</p>
-      <ul>
-        <li>Over 30 years of experience in carpentry, cabinetry, and renovation.</li>
-        <li>Licensed general carpenter since 1990.</li>
-        <li>Century home restoration expertise.</li>
-        <li>Custom furniture, millwork, and trim.</li>
-        <li>Portico, porch, fireplace mantles, and doors.</li>
-        <li>Natural stone & ceramic tile installation, drywall, painting, and decorating.</li>
+  <div class="about-grid">
+    <div class="about-image">
+      <img src="uploads/3/4/7/6/34763239/9185237.jpg" alt="Dave — owner of Medley Kitchens" />
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Medley</p>
+      <h2>Over 30 years of craft, care, and community</h2>
+      <p class="lead">Hi! I'm Dave—owner, carpenter, cabinetmaker, and labourer for Medley Kitchens. Along with Merna and Darren we provide a wide array of home improvement services, specializing in complete kitchen renovations and traditional cabinetry.</p>
+      <p class="lead">I firmly believe self-praise is no recommendation. Please check the testimonials—many references are available. Every picture on this site is of our work.</p>
+      <ul class="about-skills">
+        <li>30+ years of carpentry experience</li>
+        <li>Licensed general carpenter since 1990</li>
+        <li>Century home restoration</li>
+        <li>Custom furniture &amp; millwork</li>
+        <li>Natural stone &amp; ceramic tile</li>
+        <li>Drywall, painting &amp; decorating</li>
       </ul>
     </div>
-    <div class="card">
-      <img src="uploads/3/4/7/6/34763239/9185237.jpg" alt="Dave" />
-      <div class="card-body">
-        <p>I firmly believe self-praise is no recommendation. Please check the testimonials—many references are available. Every picture on the original site is of our work.</p>
-        <p><strong>A complete and pleasant renovation experience.</strong></p>
-      </div>
-    </div>
   </div>
 </section>
-<section id="testimonials">
-  <div class="section-title">
-    <h3>Testimonials</h3>
-    <p>Hear it from the families who hired us.</p>
+
+<!-- ===== Testimonials ===== -->
+<section id="testimonials" class="testimonials-section">
+  <div class="section-header">
+    <p class="section-label">Client Stories</p>
+    <h2>Hear it from the families who hired us</h2>
   </div>
-  <div class="cards">
-    <article class="card">
-      <div class="card-body">
-        <p><em>“Dave has renovated and built outstanding kitchens, bathrooms, closets, and furniture for us over the years. He is hardworking, punctual, trustworthy and honest. I highly recommend Dave.”</em></p>
-        <p>— Stephen Rose, Oakville</p>
-      </div>
+  <div class="testimonials-grid">
+    <article class="testimonial-card">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"Dave has renovated and built outstanding kitchens, bathrooms, closets, and furniture for us over the years. He is hardworking, punctual, trustworthy and honest. I highly recommend Dave."</blockquote>
+      <p class="author">Stephen Rose</p>
+      <p class="location">Oakville</p>
     </article>
-    <article class="card">
-      <div class="card-body">
-        <p><em>“The finished kitchen exceeded our expectations. The creative insight and expertise from design to installation made it one of the best investments we have ever made.”</em></p>
-        <p>— Andrea & Toni, Greensville</p>
-      </div>
+    <article class="testimonial-card">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"The finished kitchen exceeded our expectations. The creative insight and expertise from design to installation made it one of the best investments we have ever made."</blockquote>
+      <p class="author">Andrea &amp; Toni</p>
+      <p class="location">Greensville</p>
     </article>
-    <article class="card">
-      <div class="card-body">
-        <p><em>“Dave is professional, meticulous, knowledgeable, and works well from design to completion. He delivers great quality and value.”</em></p>
-        <p>— Kevin & Kathy Gourlay, Dundas</p>
-      </div>
+    <article class="testimonial-card">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"Dave is professional, meticulous, knowledgeable, and works well from design to completion. He delivers great quality and value."</blockquote>
+      <p class="author">Kevin &amp; Kathy Gourlay</p>
+      <p class="location">Dundas</p>
     </article>
   </div>
 </section>
-<section id="contact">
-  <div class="section-title">
-    <h3>Contact</h3>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="contact-section">
+  <div class="section-header">
+    <p class="section-label">Get in Touch</p>
+    <h2>Start your renovation</h2>
+    <p>Tell us about your project and we'll schedule a consultation.</p>
   </div>
-  <div class="grid-two">
-    <div class="contact-panel">
-      <h4>Studio</h4>
-      <p>Mount Pleasant, Ontario</p>
-      <p>226-388-4160</p>
-      <p>hello@medleykitchens.ca</p>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Visit our studio</h3>
+      <div class="contact-detail">
+        <div class="icon">&#9906;</div>
+        <p><strong>Location</strong>Mount Pleasant, Ontario</p>
+      </div>
+      <div class="contact-detail">
+        <div class="icon">&#9742;</div>
+        <p><strong>Phone</strong>226-388-4160</p>
+      </div>
+      <div class="contact-detail">
+        <div class="icon">&#9993;</div>
+        <p><strong>Email</strong>hello@medleykitchens.ca</p>
+      </div>
     </div>
-    <div class="contact-panel">
-      <h4>Request a call</h4>
+    <div class="contact-form">
+      <h3>Request a call</h3>
       <form action="mailto:hello@medleykitchens.ca" method="post" enctype="text/plain">
-        <label>Name</label>
-        <input type="text" name="Name" required/>
-        <label>Project type</label>
-        <input type="text" name="Project" required/>
-        <label>Preferred timeline</label>
-        <input type="text" name="Date" />
-        <button class="cta" type="submit">Send</button>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="Name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="Phone" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project">Project type</label>
+          <input type="text" id="project" name="Project" placeholder="e.g. Kitchen renovation, bathroom remodel" required />
+        </div>
+        <div class="form-group">
+          <label for="timeline">Preferred timeline</label>
+          <input type="text" id="timeline" name="Timeline" placeholder="e.g. Spring 2026" />
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="Message" placeholder="Describe your project, budget range, or any questions..."></textarea>
+        </div>
+        <button class="btn-primary" type="submit">Send request</button>
       </form>
     </div>
   </div>
 </section>
+
+<!-- ===== Footer ===== -->
 <footer>
-  <p>© 2026 Medley Kitchens. Built with Craft, Family, and Service.</p>
+  <p>&copy; 2026 Medley Kitchens &mdash; Built with Craft, Family, and Service.</p>
 </footer>
+
 </body>
 </html>
